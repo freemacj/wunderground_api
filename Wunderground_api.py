@@ -1,9 +1,10 @@
-import urllib.request as request
 import json
-key = 'your_api_key_here'
+import urllib.request as request
+from config import api_key
+
 while 1:
     zip_code = input('For which ZIP code would you like to see the weather? ')
-    fileName = "http://api.wunderground.com/api/" + key +    "/geolookup/conditions/q/PA/" + zip_code + ".json"
+    fileName = "http://api.wunderground.com/api/" + api_key +    "/geolookup/conditions/q/PA/" + zip_code + ".json"
     f = request.urlopen(fileName)
     json_string = f.read().decode('utf-8')
     parsed_json = json.loads(json_string)
