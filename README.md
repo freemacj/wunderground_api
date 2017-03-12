@@ -1,6 +1,10 @@
 # Wunderground API
 
-Note: I have recently updated the Wunderground API code sample provided for python to ensure this code runs for python 3. If forking this repo, all that needs to be added to this script is your personal API key into: key = 'your_api_key_here'.  Instuctions to obtain your personal API key are found below:
+Note: I have recently updated the Wunderground API code sample provided for python to ensure this code runs for python 3. If forking this repo, all that needs to be added to this script is your personal API key into a seperate file in the same directory titled config.py like this:
+    ```   
+    api_key = "your_api_key_here"
+    ```
+Instuctions to obtain your personal API key are found below:
 
 Getting Started
 
